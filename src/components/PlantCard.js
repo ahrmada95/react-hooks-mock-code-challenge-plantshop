@@ -29,13 +29,13 @@ function PlantCard({url, index, img, name, price, handleDelete}) {
     }
   }
 
-  const handleDeleteClick = () => {
-    if(window.confirm("Do you want to delete this plant?")) {
-      fetch((url+'/'+index), {
-        method: 'DELETE'
+  //func del elem from DB then calls handeDelete function
+  const handleDeleteClick = () => { 
+    if(window.confirm("Do you want to delete this plant?")) { //confirm with user
+      fetch((url+'/'+index), { //get the id
+        method: 'DELETE' //delete
       })
-      console.log(index);
-      handleDelete(index);
+      handleDelete(index); //handleDelete takes index and passes it to parent
       alert(`${name} Plant has been deleted. Page will now re-render.`);
     }
     else {

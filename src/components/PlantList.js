@@ -4,13 +4,14 @@ import PlantCard from "./PlantCard";
 
 function PlantList({dbUrl, plantList, filterTarget}) {
   const [deleteElem, setDeleteElem] = useState(0); //id of the element in the array to be deleted
+
   let currList = plantList.filter((plant) => {return plant.name.toLowerCase().includes(filterTarget.toLowerCase())});
 
-  if(deleteElem !== 0){
-    currList = plantList.filter((plant) => plant.id !== deleteElem);
+  if(deleteElem !== 0){ //if the index for the delete isn't 0, then it will trigger a change
+    currList = plantList.filter((plant) => plant.id !== deleteElem); //return back array without element at indicated index
   }
 
-  const handleDelete = (index) => {
+  const handleDelete = (index) => { //changes the index, trigger function for rerender 
     setDeleteElem(index);
   }
 

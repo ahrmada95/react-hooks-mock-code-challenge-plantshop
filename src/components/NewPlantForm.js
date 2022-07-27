@@ -22,7 +22,6 @@ function NewPlantForm({plantList, setPlantList, url}) {
       body: JSON.stringify(newPlant)
     })
 
-    console.log('Way after:', plantList);
     event.target['name'].value = '';
     event.target['image'].value = '';
     event.target['price'].value = '';
