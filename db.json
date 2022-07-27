@@ -40,7 +40,13 @@
       "id": 7,
       "name": "Fiddle Leaf Fig",
       "image": "./images/fiddle-leaf-fig.jpg",
-      "price": 55
+      "price": 55.01
+    },
+    {
+      "id": 8,
+      "name": "Goblin's Secret Remedy",
+      "image": "https://static.wikia.nocookie.net/yugioh/images/f/fb/GoblinsSecretRemedy-TF04-JP-VG.jpg",
+      "price": 0.1
     }
   ]
 }

@@ -23,6 +23,17 @@ button {
   cursor: pointer;
 }
 
+.deletebtn {
+  padding: 0.1rem 0.5rem;
+  font-family: inherit;
+  border: none;
+  cursor: pointer;
+  background-color: red;
+  color: white;
+  font-size: 10px;
+  margin-left: 99.5px;
+}
+
 button.primary {
   background-color: var(--green);
   color: white;
@@ -111,6 +122,17 @@ input:focus {
 
 .card button {
   margin-top: 0.5rem;
+}
+
+.cardprice {
+  cursor: pointer;
+  background-color: white;
+  color: black
+}
+
+.cardprice:hover {
+  background-color: rgb(204, 143, 143);
+  color:white;
 }
 
 @media (min-width: 768px) {
